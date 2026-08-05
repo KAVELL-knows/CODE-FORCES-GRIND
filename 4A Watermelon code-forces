@@ -1,0 +1,9 @@
+w = int(input("input: "))
+if w < 1 or w > 100:
+    print("Enter a weight between 1 and 100 kilograms.")
+else:
+    print(f"Weight entered: {w} kilograms.")
+    if w % 2 == 0 and w != 2:
+        print("YES")
+    else:
+        print("NO")
