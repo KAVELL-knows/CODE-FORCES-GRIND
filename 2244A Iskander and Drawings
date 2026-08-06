@@ -1,0 +1,17 @@
+#This code checks the time for every line and stores the maximum time recorded.
+t = int(input())      #no of test cases
+for _ in range(t):    #going through each test case
+    n = int(input())  #the length of the string 
+    s = input()       # the actual length of the line
+
+    count = 0
+    answer = 0
+
+    for c in s:       #looks at each character in the string
+        if c=='#':
+            count +=1
+        else:
+          answer = max(answer,(count+1)//2)   #time is given by length/2 and rounded up.. ie count+1//2 .. we add one since division naturally rounds down and we want to round up 
+          count = 0  #we are starting over from count = 0... a new line
+    answer = max(answer,(count+1)//2)
+    print(answer)
