@@ -1,0 +1,36 @@
+#How many primes between 2 and n can be created using neighboring primes + 1
+#Then we compare that number to k
+
+#k is the number of successful attempts needed
+#n is the upper limit for checking primes
+n, k = map(int, input().split()) 
+# The first line must contain two integers n and k, where n is the upper limit for checking primes and k is the minimum number of primes that must satisfy the condition.
+#.split splits the text where there are spaces
+# python cant do math with strings so we need to convert the input into integers.
+                                 
+def prime(x):
+    if x < 2: #prime numbers are greater than 1
+        return False
+    for i in range(2, int(x**0.5)+1):   
+        if x % i == 0:    #if any value of x is divisible by any of the integers in the string, then it is not prime
+            return False  #the range is from 2 until the square root of x because multiplication occurs in pairs, so if there is a factor, like for example in 36, the root is 6, so it makes sense to check from 2 to 6 for a factor, because if there is a factor greater than 6 then there must be a factor less than 6. eh 2 x 18
+                          # When we take the square root of a number like 35, Python rounds down, so it checks between 2 and 5
+    return True           #we added 1 because the range function stops at 1 less than the specified value, so we add 1 to include the square root in the range.
+
+primes = []
+
+for i in range(2, n+1):  #range stops at 1 less than what is specified, so we add 1 to n to include n in the range
+    if prime(i):
+        primes.append(i)  #.append adds the prime number to the list of primes
+count = 0
+
+# check neighboring primes
+for i in range(len(primes)-1):   #len(primes) gives the number of primes in the list, and we subtract 1 because we are checking pairs of neighboring primes so we need to stop at the second last prime.)
+    value = primes[i] + primes[i+1] + 1  #we add the current prime + the next prime + 1 to get the value
+    
+    if value <= n and prime(value):  #if the value is less than or equal to n and the value is prime, then we increment the count
+        count += 1
+if count >= k:
+    print("YES")
+else:
+    print("NO")
