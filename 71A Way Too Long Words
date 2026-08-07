@@ -1,0 +1,13 @@
+#this code abbreviates words. If a word is <= 10 characters, it prints the word itself; 
+else, it prints the first letter, the number of letters in the middle, and the last letter.
+
+n = int(input())               #the number of n words you want to test 
+for i in range(n):             #the code beneath is ran for n times 
+    x = str(input())
+    if len(x) <= 10:           #check the length of the word
+        print(x.lower())       #the input will be all common letters 
+    else:
+        y = x[0]               #y is the first letter in the word, as index notation starts with 0 
+        z = x[-1]              #z is the last letter in the word, the last letter is represented by -1 in index notation
+        x = len(x) - 2         #accounts for the number of letters between the first and last letter 
+        print((y+str(x)+z).lower())    #to get an output like l10z  that would be l + 10 + z... NB l*10*z would be llllllllllz
