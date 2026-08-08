@@ -1,5 +1,5 @@
 # CODE-FORCES-GRIND
-all the problems i did lol
+All the problems I did lol
 
 
 04/08/2026
@@ -46,10 +46,10 @@ NB: to do more than one input for words on the same line
 x, y = input("Enter two words: ").split()
 
 
-DID  A SECOND PROBLEM
-learn that if I wanted to print l10z
+07/08/2026
+learnt that if I wanted to print l10z
 I would have to do l + 10 + z
-NB: l*10*z would print llllllllll*z (Python does not mulitplt string by string)
+NB: l*10*z would print llllllllll*z (Python does not mulitply string by string)
 
 len(word) would give 4
 Nb len[4] is wrong
@@ -57,3 +57,9 @@ Nb len[4] is wrong
 lets say we did x = word and want to know what the first and last letters were
 first_letter = x[0]
 last_letter = x[-1]
+
+08/08/2026
+y = area // 2     #it should round down if 9/2    NB // round down  but / give the decimal 
+
+
+
