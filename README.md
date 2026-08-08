@@ -44,3 +44,16 @@ x, y = map(int, input("Enter two numbers: ").split())
 
 NB: to do more than one input for words on the same line
 x, y = input("Enter two words: ").split()
+
+
+DID  A SECOND PROBLEM
+learn that if I wanted to print l10z
+I would have to do l + 10 + z
+NB: l*10*z would print llllllllll*z (Python does not mulitplt string by string)
+
+len(word) would give 4
+Nb len[4] is wrong
+
+lets say we did x = word and want to know what the first and last letters were
+first_letter = x[0]
+last_letter = x[-1]
