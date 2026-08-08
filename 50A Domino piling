@@ -1,0 +1,13 @@
+#A50 DOMINOS
+
+# The logic is simple. We are required to find the max number of dominoes that can be placed within the grid 
+#find the area of the board m * n and then divide it by 2 since the max area of a domino is 2
+#if you get a remainder, round down to find the max no of dominoes 
+
+
+#let M be rows
+#let N be columns
+M, N = map(int, input().split())
+area = M * N
+y = area // 2     #it should round down if 9/2    NB // round down  but / give the decimal 
+print(y)
