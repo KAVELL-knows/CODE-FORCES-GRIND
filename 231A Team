@@ -1,0 +1,11 @@
+#231A
+#TEAM
+
+n = int(input()) #no of problems
+
+count = 0
+for i in range(n):
+    x, y, z = map(int, input().split())
+    if x + y + z >= 2:           #they write the solution if at least 2 have gotten the question right
+        count = count + 1
+print(count)
