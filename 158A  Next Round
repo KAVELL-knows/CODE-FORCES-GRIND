@@ -1,0 +1,20 @@
+#158A
+# The problem is non-increasing, so the numbers are entered in descending order
+#n = number of people that took part
+#k = This is the number of spots that move onto the next round
+
+n, k = map(int, input().split())
+y = list(map(int, input().split()))
+y.sort(reverse=True)
+#allows you to fill the array as much as you want in one go
+#The list() function splits that text string into individual characters.( not in this case tho )
+#In this case, list() is taking the results from map() and putting them into a list.
+#hello becomes [h e l l o]  and 123 becomes [1 2 3]
+#.split splits by words, so Hi Pie becomes [Hi, Pie]
+count = 0
+for i in y: 
+    if i >= y[k - 1] and i > 0:  #y[k-1] is retrieving the actual value of the k-1 score so it could compare if i >= 7
+#we must do the k-1 because the highest score is 0 in index notation, the 2nd highest is one
+#now suppose we only want 5 people to qualify, then we would need to do k-1 ( take form 0 to 4 )
+        count = count + 1
+print(count)
