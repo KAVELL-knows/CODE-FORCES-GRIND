@@ -61,5 +61,34 @@ last_letter = x[-1]
 08/08/2026
 y = area // 2     #it should round down if 9/2    NB // round down  but / give the decimal 
 
+09/08/2026
+1.
+y = list(map(int, input().split()))
+list() is taking the results from map() and putting them into a list,
+So it allows me to input 10 8 6 4 2
+and saves it as y =[10, 8, 6, 4, 2]
 
+2.
+y.sort(reverse=True)
+It goes through a list/array by the name of y and sorts it into descending order.
 
+y.sort()
+It goes through a list/array by the y and sorts it in ascending order.
+
+eg 
+y =[10, 8, 6, 4, 2]
+y.sort()
+print(y)
+output would be [2, 4, 6, 8, 10]
+
+to get rid of the [..]
+print(*y) would output 2 4 6 8 10
+
+3.
+Always remember index notation with an array, so [2, 4, 6, 8, 10]
+2 is the 0 position
+10 is the 4th position
+
+4. To go through each number within an array
+   for num in y:
+   print(num)
