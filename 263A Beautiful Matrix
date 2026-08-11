@@ -1,0 +1,17 @@
+#263A
+
+for i in range(5):
+    row = list(map(int,input().split())) #no of columns, row.index(1) searches for the number 1 and saves the column number
+    if 1 in row:
+        j = row.index(1)    #look for a row with 1, once that row is found 
+        x = abs(j - 2)
+        y = abs(i - 2) #asb gives the absolute number 
+        p = x + y
+        print(p) 
+
+#visualization of the matrix
+[0][0] [0][1] [0][2] [0][3] [0][4]
+[1][0] [1][1] [1][2] [1][3] [1][4]
+[2][0] [1][1] [2][2] [3][3] [4][4]
+[3][0] [3][1] [3][2] [3][3] [3][4]
+[4][0] [4][1] [4][2] [4][3] [4][4]
