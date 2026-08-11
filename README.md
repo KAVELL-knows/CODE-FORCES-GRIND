@@ -92,3 +92,8 @@ Always remember index notation with an array, so [2, 4, 6, 8, 10]
 4. To go through each number within an array
    for num in y:
    print(num)
+
+
+11/08/26
+to get an absolute number/ module so abs
+so abs(-1) = 1
