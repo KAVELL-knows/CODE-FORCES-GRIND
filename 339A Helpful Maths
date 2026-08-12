@@ -1,0 +1,12 @@
+#339A
+
+s = list(map(int, input().split('+')))  #.split('x') is used so that each number is split by a + not a space
+s.sort()
+print('+'.join(map(str, s))) 
+
+#int was used to convert each item entered into an integer so that it can be sorted by .sort
+# then map(str, s) takes the numbers and converts them back into text [1, 2, 3] ---> ['1', '2', '3']
+# '+'.join puts a + between each number  printed 
+# NB .join() works directly on a map object without needing to convert it into a list
+# however, usually to print something mapped we need to list it, so print((list(map(str, s))))
+# print'+'.join(list(map(str, s))) is also correct
