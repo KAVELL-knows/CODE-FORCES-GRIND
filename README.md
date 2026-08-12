@@ -73,7 +73,7 @@ y.sort(reverse=True)
 It goes through a list/array by the name of y and sorts it into descending order.
 
 y.sort()
-It goes through a list/array by the y and sorts it in ascending order.
+It goes through a list/array by the name of y and sorts it in ascending order.
 
 eg 
 y =[10, 8, 6, 4, 2]
@@ -95,5 +95,16 @@ Always remember index notation with an array, so [2, 4, 6, 8, 10]
 
 
 11/08/26
-to get an absolute number/ module so abs
+to get an absolute number/modulus, so abs
 so abs(-1) = 1
+
+12/08/2026
+
+#if I wanted to separate input by + rather than split, I can use .split('+')
+
+#int converts each item entered into an integer so that it can be sorted by .sort
+# then map(str, s) takes the numbers and converts them back into text [1, 2, 3] ---> ['1', '2', '3']
+# '+'.join puts a + between each number  printed 
+# NB .join() works directly on a map object without needing to convert it into a list
+# however, usually to print something mapped we need to list it, so print((list(map(str, s))))
+# print'+'.join(list(map(str, s))) is also correct
