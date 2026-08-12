@@ -1,0 +1,12 @@
+#112A — Petya and Strings
+s = list (input().lower())   #all letters entered into the list will be saved as lower-cased numbers
+p = list (input().lower())
+
+s_value = [ord(char) - 96 for char in s]  #gets the character value for each letter entered; the - 96 is because a = 97, so -96 makes it 1
+p_value = [ord(char) - 96 for char in p]
+if p_value == s_value:
+    print("0")
+elif p_value > s_value:
+    print("-1")
+else:
+    print("1")
