@@ -22,7 +22,7 @@ It is not specified in this case, so it just goes on x times
 
 
 06/08/2026
-1 Learned how to create a code to test for a prime number.
+1 Learned how to create code to test for a prime number.
 It works on the principle that by finding the square root of a number, since multiplication works in pairs, one number must be smaller than the root:
 
 if x < 2: #prime numbers are greater than 1
@@ -49,12 +49,12 @@ x, y = input("Enter two words: ").split()
 07/08/2026
 learnt that if I wanted to print l10z
 I would have to do l + 10 + z
-NB: l*10*z would print llllllllll*z (Python does not mulitply string by string)
+NB: l*10*z would print llllllllll*z (Python does not multiply string by string)
 
 len(word) would give 4
 Nb len[4] is wrong
 
-lets say we did x = word and want to know what the first and last letters were
+Let's say we did x = word and want to know what the first and last letters were
 first_letter = x[0]
 last_letter = x[-1]
 
@@ -70,10 +70,10 @@ and saves it as y =[10, 8, 6, 4, 2]
 
 2.
 y.sort(reverse=True)
-It goes through a list/array by the name of y and sorts it into descending order.
+It goes through a list/array named y and sorts it in descending order.
 
 y.sort()
-It goes through a list/array by the name of y and sorts it in ascending order.
+It goes through a list/array named y and sorts it in ascending order.
 
 eg 
 y =[10, 8, 6, 4, 2]
@@ -100,14 +100,14 @@ so abs(-1) = 1
 
 12/08/2026
 
-#if I wanted to separate input by + rather than split, I can use .split('+')
+if I wanted to separate input by + rather than split, I can use .split('+')
 
-#int converts each item entered into an integer so that it can be sorted by .sort
-# then map(str, s) takes the numbers and converts them back into text [1, 2, 3] ---> ['1', '2', '3']
-# '+'.join puts a + between each number  printed 
-# NB .join() works directly on a map object without needing to convert it into a list
-# however, usually to print something mapped we need to list it, so print((list(map(str, s))))
-# print'+'.join(list(map(str, s))) is also correct
+int converts each item entered into an integer so that it can be sorted by .sort
+then map(str, s) takes the numbers and converts them back into text [1, 2, 3] ---> ['1', '2', '3']
+'+'.join puts a + between each number  printed 
+NB .join() works directly on a map object without needing to convert it into a list
+However, usually to print something mapped we need to list it, so print((list(map(str, s))))
+print'+'.join(list(map(str, s))) is also correct
 
 13/08/2026
 
