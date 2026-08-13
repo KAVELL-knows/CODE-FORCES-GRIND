@@ -1,0 +1,18 @@
+#734A — Anton and Danik
+n =  int(input())           #no of games played
+games = input().upper()     #Result after each game #list is not used here because you can type the entire input in one go. 
+
+countA = 0
+countD = 0
+
+for char in games:          #To check for a letter in a list, you need to do char 
+    if char == 'A':         
+        countA = countA + 1
+    if char == 'D':
+        countD = countD + 1 
+if countA > countD:
+        print("Anton")
+elif countA < countD:
+        print("Danik")
+else:
+        print("Friendship")
