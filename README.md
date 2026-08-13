@@ -108,3 +108,16 @@ so abs(-1) = 1
 # NB .join() works directly on a map object without needing to convert it into a list
 # however, usually to print something mapped we need to list it, so print((list(map(str, s))))
 # print'+'.join(list(map(str, s))) is also correct
+
+13/08/2026
+
+Suppose you want to count the number of A's in the word AAPLE
+x = input()
+countA = 0 
+for char in x:        
+    if char == 'A':         
+        countA = countA + 1
+print("CountA")
+
+
+
