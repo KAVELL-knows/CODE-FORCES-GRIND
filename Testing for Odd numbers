@@ -1,0 +1,28 @@
+Here is the code for an odd number.
+
+We know odd numbers give a remainder of 1 when we divide by 2. 
+
+Therefore supper we had a number  n, and we wanted to see if n was odd. We could divide n by 2 and check for a remainder.
+
+n = int(input("What number do you want to test ?"))
+  if n % 2 == 1:
+  print("Odd")
+  else:
+  print("Even")
+
+
+What if we had a list and we wanted to see which numbers within that list were odd
+
+x =  list(map(int, input().split()))
+
+odd = [i for i in x if i % 2 != 0]
+print(odd)
+
+Alternative code for listing odd numbers:
+odd = [i for i in x if i % 2 == 1]
+
+
+
+
+
+
