@@ -1,0 +1,14 @@
+#59B
+
+n = int(input())
+x = list(map(int, input().split()))
+
+total = sum(x)
+if total % 2 == 1:       #prints the sum if it is odd
+    print(total)
+else:
+    odd = [i for i in x if i % 2 != 0]        #code for identifing odd numbers in a list
+    if odd:
+        print(total - min(odd))           #if the sum is even, we want to subtract the smallest odd number
+    else:                                 #min(odd) gives the smallest odd number in the list odd
+        print(0)
