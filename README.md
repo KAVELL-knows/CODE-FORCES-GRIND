@@ -105,7 +105,7 @@ if I wanted to separate input by + rather than split, I can use .split('+')
 int converts each item entered into an integer so that it can be sorted by .sort
 then map(str, s) takes the numbers and converts them back into text [1, 2, 3] ---> ['1', '2', '3']
 '+'.join puts a + between each number  printed 
-NB .join() works directly on a map object without needing to convert it into a list
+NB: .join() works directly on a map object without needing to convert it into a list
 However, usually to print something mapped we need to list it, so print((list(map(str, s))))
 print'+'.join(list(map(str, s))) is also correct
 
@@ -119,5 +119,12 @@ for char in x:
         countA = countA + 1
 print("CountA")
 
+
+15/08/2026
+The code for identifying odd numbers in a list
+
+odd = [i for i in x if i % 2 == 1]
+
+alternaitvely odd = [i for i in x if i % 2 != 0]
 
 
