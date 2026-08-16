@@ -131,3 +131,15 @@ alternaitvely odd = [i for i in x if i % 2 != 0]
 # / is for float, so it expects a decimal (ie input was float)
 # % is for MOD
 # // is for dividing integers ( ie your input was integers)
+
+
+16/08/2026
+    #str(y) changes the integer to a string
+    #len checks how many digits/ characters are in the code
+    #set() keeps unique values so 
+    # y = 1998 
+    # str(y) = "1998"
+    # len(str(y)) = 4
+    # set(str(y)) = 1,9,8   # gets rid of repeating value if it was 999 I would just be 9
+    # len(set(str(y))) = 3
+    # we want to only run the code if the 2 lengths remain the same
