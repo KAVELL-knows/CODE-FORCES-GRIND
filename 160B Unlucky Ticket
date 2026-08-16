@@ -1,0 +1,28 @@
+#160B Unlucky Ticket
+
+n = int(input())
+x = input()
+
+first_half = list(map(int, x[:n]))
+second_half = list(map(int, x[n:]))
+
+first_half.sort() #ascending order
+second_half.sort()
+
+if all(first_half[i] < second_half[i] for i in range(n)):
+    print("YES")
+elif all(first_half[i] > second_half[i] for i in range(n)):
+    print("YES")
+else:
+    print("NO")
+
+#How to slice strings
+n = input
+x = input()
+first_half = list(map(int, x[:n]))
+#this is going to the first half of th string and counts n times
+# eg 2421 = 24 
+#it then uses list to create [2, 4]
+
+all(first_half[i] < second_half[i] for i in range(n))
+#all checked to make sure EVERY STATEMENT IS TRUE, if one statement is false the if statement fails. 
