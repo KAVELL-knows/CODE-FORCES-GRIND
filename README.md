@@ -140,6 +140,18 @@ alternaitvely odd = [i for i in x if i % 2 != 0]
     # y = 1998 
     # str(y) = "1998"
     # len(str(y)) = 4
-    # set(str(y)) = 1,9,8   # gets rid of repeating value if it was 999 I would just be 9
+    # set(str(y)) = 1,9,8   # gets rid of repeating value; if it were 999, I would just be 9
     # len(set(str(y))) = 3
-    # we want to only run the code if the 2 lengths remain the same
+    # we want only to run the code if the 2 lengths remain the same
+
+
+    #How to slice strings
+n = input
+x = input()
+first_half = list(map(int, x[:n]))
+#this is going to the first half of th string and counts n times
+# eg 2421 = 24 
+#it then uses list to create [2, 4]
+
+all(first_half[i] < second_half[i] for i in range(n))
+#all checks to make sure EVERY STATEMENT IS TRUE; if one statement is false, the if statement fails. 
