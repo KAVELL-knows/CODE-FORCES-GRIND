@@ -155,3 +155,10 @@ first_half = list(map(int, x[:n]))
 
 all(first_half[i] < second_half[i] for i in range(n))
 #all checks to make sure EVERY STATEMENT IS TRUE; if one statement is false, the if statement fails. 
+
+
+
+#HOW TO SUBSETS
+p = set(str(w))
+z = {'I', 'O', 'S', 'H', 'Z', 'X', 'N'}
+if p.issubset(z)
