@@ -127,4 +127,7 @@ odd = [i for i in x if i % 2 == 1]
 
 alternaitvely odd = [i for i in x if i % 2 != 0]
 
-
+#important note
+# / is for float, so it expects a decimal (ie input was float)
+# % is for MOD
+# // is for dividing integers ( ie your input was integers)
