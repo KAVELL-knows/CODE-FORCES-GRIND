@@ -1,0 +1,13 @@
+n, x = map(int,input().split())
+people = list(input().upper())
+for _ in range(x):
+    i = 0 
+
+    while i < n - 1:
+        if people[i] == "B" and people[i + 1] == "G":
+            people[i], people[i + 1] = people[i + 1], people[i]
+            i += 2
+        else:
+            i += 1
+
+print("".join(people))
