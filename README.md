@@ -162,3 +162,15 @@ all(first_half[i] < second_half[i] for i in range(n))
 p = set(str(w))
 z = {'I', 'O', 'S', 'H', 'Z', 'X', 'N'}
 if p.issubset(z)
+
+
+17/08/2026
+#How to do capitalization
+#This code just takes the first letter, makes it capital, and makes all other letters lowercase
+word = input().capitalize()
+print(word)
+
+#How to  make only the first letter capital and leave everything else the same
+word = list(input())
+word[0] = word[0].upper()  # Saves the uppercase letter
+print("".join(word))       # Converts the list back to a normal word
