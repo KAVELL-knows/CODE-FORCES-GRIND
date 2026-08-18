@@ -1,0 +1,11 @@
+#791A  Codeforces Big Brother
+# Limak = a - younger
+# Bob - b = older
+
+a, b = map(int, input().split())
+count = 0
+while a <= b:
+    count = count + 1
+    a = 3*a
+    b = 2*b
+print(count)
