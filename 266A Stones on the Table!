@@ -1,0 +1,8 @@
+#266A - Stones on the Table!
+x = int(input())
+y = list(input())
+count = 0
+for i in range(0, x-1):
+    if y[i] == y[i + 1]:
+        count = count + 1
+print(count)
