@@ -1,0 +1,18 @@
+#59A A Word
+
+s = input()
+countL = 0
+countU = 0
+for i in range(len(s)):
+    letter_value = ord(s[i])
+    if letter_value >=  97 and letter_value <= 122:
+        countL = countL + 1
+    elif letter_value >= 65 and letter_value <= 90:
+        countU = countU + 1
+    else:
+        countU = countU + 0
+        countL = countL + 0
+if countL >= countU:  
+    print(s.lower())
+else:
+    print(s.upper())
