@@ -1,0 +1,11 @@
+#110A A. Nearly Lucky Number
+
+n = input()
+count = 0 
+for digit in n:
+    if digit == '7' or digit == '4':
+        count = count + 1
+if count == 7 or count == 4:
+    print("YES")
+else:
+    print("NO")
