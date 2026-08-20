@@ -174,3 +174,20 @@ print(word)
 word = list(input())
 word[0] = word[0].upper()  # Saves the uppercase letter
 print("".join(word))       # Converts the list back to a normal word
+
+19/08/2026
+1. Always remember we are doing if statements to look for all scenarios, including if > < and = 
+
+2. How to get the ASII value for some letter
+
+s = input()
+for i in range(len(s)):
+    letter_value = ord(s[i])
+
+3. If we want to do upper and lower
+In Python, .upper() and .lower() are string methods.
+This means they are specifically designed to look at a sequence of text characters and change their casing.
+
+If we want to use upper or lower, we need to have a STRING, so input can be a LIST 
+
+    
