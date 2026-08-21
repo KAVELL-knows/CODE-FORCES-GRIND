@@ -1,0 +1,12 @@
+#677 A. Vanya and Fence
+n, h = map(int, input().split())
+z = list(map(int, input().split()))
+countU = 0 
+countO = 0
+for i  in z:
+    if i <= h:
+        countU = countU + 1
+    else:
+        countO = countO + 1
+width = (countO * 2)  + countU 
+print(width)
