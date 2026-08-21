@@ -190,4 +190,19 @@ This means they are specifically designed to look at a sequence of text characte
 
 If we want to use upper or lower, we need to have a STRING, so input can be a LIST 
 
+
+20/08/2026
+Code to check for a word if the forward spelling is equal to the backward spelling
+
+s = input()
+t = input()
+if s == t[::-1]:
+    print("YES")
+else:
+    print("NO")
+
+HOW TO READ A WORD BACKWARDS
+word = "python"
+reversed_word = word[::-1]
+
     
