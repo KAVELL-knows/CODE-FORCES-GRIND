@@ -1,0 +1,10 @@
+#271A Beautiful Year
+
+x = int(input())
+x += 1
+while True:
+    if len(set(str(x))) == 4:
+        print(x)
+        break
+    else:
+        x += 1 
