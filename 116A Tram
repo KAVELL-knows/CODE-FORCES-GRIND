@@ -1,0 +1,12 @@
+#116A Tram
+# x = get off
+# y = get on 
+n = int(input())
+on_board = 0
+list = []
+for i in range(n):
+    x, y = map(int, input().split())
+    on_board = on_board + y - x 
+    list.append(on_board)
+list.sort(reverse=True)
+print(list[0])
