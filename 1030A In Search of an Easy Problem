@@ -1,0 +1,8 @@
+#1030A In Search of an Easy Problem
+
+n = int(input())
+people = list(map(int, input().split()))
+if 1 in people:
+    print("HARD")
+else:
+    print("EASY")
