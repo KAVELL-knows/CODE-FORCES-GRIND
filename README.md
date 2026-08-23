@@ -206,3 +206,11 @@ word = "python"
 reversed_word = word[::-1]
 
     
+23/08/2026
+list say you had a list of people = [2, 0 ,4, 6, 1]
+
+and you wanted to check if 1 was in that list
+you can do 
+if 1 in people
+          xyz          
+notice 1 isnt in ""
