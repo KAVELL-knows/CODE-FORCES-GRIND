@@ -230,3 +230,13 @@ if people[i] == people[i+1]
 we can get an out-of-range error. To solve this, we do 
 for i in range(n-1):
 if people[i] == people[i+1]
+
+3. enumerate -  lets you loop through a list while keeping track of both the item and its index (position) at the same time
+friends = ["Alice", "Bob", "Charlie"]
+
+for index, name in enumerate(friends):
+    print(index, name)
+# Output:
+# 0 Alice
+# 1 Bob
+# 2 Charlie
