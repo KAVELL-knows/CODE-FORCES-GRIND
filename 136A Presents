@@ -1,0 +1,10 @@
+#136A Presents 
+
+n = int(input())
+p = list(map(int, input().split()))
+
+gift = [0] * n
+
+for giver, receiver in enumerate(p, start=1):
+    gift[receiver - 1] = giver
+print(*(gift))
