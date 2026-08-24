@@ -1,0 +1,10 @@
+#486A. Calculating Function
+n = int(input())
+odd = 0
+even = 0
+if n % 2 == 0:
+    x = n // 2 
+    print(x)
+else:
+    x = ((n + 1)//2)*-1
+    print(x)
