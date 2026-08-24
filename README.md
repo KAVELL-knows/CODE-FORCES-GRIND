@@ -207,10 +207,16 @@ reversed_word = word[::-1]
 
     
 23/08/2026
-list say you had a list of people = [2, 0 ,4, 6, 1]
+list: say you had a list of people = [2, 0,4, 6, 1]
 
 and you wanted to check if 1 was in that list
 you can do 
 if 1 in people
           xyz          
-notice 1 isnt in ""
+Notice 1 isn't in ""
+
+
+24/08/2026
+On Python 3, when working with whole numbers, it's  better to use // to divide  
+
+If we wanted to do 1000000, Python might see that as 1000000..000004444, and so when we divide, our answer is wrong. Instead, use // so it's rounded 
