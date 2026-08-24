@@ -1,0 +1,14 @@
+#344A. Magnets
+
+n = int(input())
+groups = []
+count = 1
+for i in range(n):
+    x = int(input())
+    groups.append(x)
+for j in range(n-1):
+    if groups[j] == groups[j+1]:
+        count += 0 
+    else:
+        count += 1
+print(count)
