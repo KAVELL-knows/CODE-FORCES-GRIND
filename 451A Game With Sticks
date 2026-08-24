@@ -1,0 +1,15 @@
+#451A. Game With Sticks
+
+n, m = map(int, input().split())
+if n <= m:
+    y = n % 2
+    if y == 0:
+        print("Malvika")
+    else:
+        print("Akshat")
+else:
+    y = m % 2
+    if y == 0:
+        print("Malvika")
+    else:
+        print("Akshat")
