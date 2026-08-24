@@ -220,3 +220,13 @@ Notice 1 isn't in ""
 On Python 3, when working with whole numbers, it's  better to use // to divide  
 
 If we wanted to do 1000000, Python might see that as 1000000..000004444, and so when we divide, our answer is wrong. Instead, use // so it's rounded 
+
+2.
+In a for loop, if we are going through items and want to compare like
+people = []
+for i in range(n):
+if people[i] == people[i+1]
+
+we can get an out-of-range error. To solve this, we do 
+for i in range(n-1):
+if people[i] == people[i+1]
