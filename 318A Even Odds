@@ -1,0 +1,23 @@
+#318A. Even Odds
+n, k = map(int, input().split())
+odds = (n + 1) // 2
+if k <= odds:
+    print(2 * k - 1)
+else:
+    print(2 * (k - odds))
+
+
+HERE IS ALTERNATE CODE I ALSO WROTE; IT WAS JUST TOO SLOW 
+
+#318A. Even Odds
+n, k = list(map(int, input().split()))
+odd = []
+even = []
+for i in range(1, n+1):
+    if i % 2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+combined = odd + even 
+k = k - 1
+print(combined[k])
