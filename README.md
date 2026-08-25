@@ -236,10 +236,10 @@ friends = ["Alice", "Bob", "Charlie"]
 
 for index, name in enumerate(friends):
     print(index, name)
-# Output:
-# 0 Alice
-# 1 Bob
-# 2 Charlie
+ Output:
+ 0 Alice
+ 1 Bob
+ 2 Charlie
 
 
 25/08/2026
