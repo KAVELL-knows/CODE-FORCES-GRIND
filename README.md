@@ -134,27 +134,27 @@ alternaitvely odd = [i for i in x if i % 2 != 0]
 
 
 16/08/2026
-    #str(y) changes the integer to a string
-    #len checks how many digits/ characters are in the code
-    #set() keeps unique values so 
-    # y = 1998 
-    # str(y) = "1998"
-    # len(str(y)) = 4
-    # set(str(y)) = 1,9,8   # gets rid of repeating value; if it were 999, I would just be 9
-    # len(set(str(y))) = 3
-    # we want only to run the code if the 2 lengths remain the same
+    str(y) changes the integer to a string
+    len checks how many digits/ characters are in the code
+    set() keeps unique values so 
+    y = 1998 
+    str(y) = "1998"
+    len(str(y)) = 4
+    set(str(y)) = 1,9,8   # gets rid of repeating value; if it were 999, I would just be 9
+    len(set(str(y))) = 3
+    we want only to run the code if the 2 lengths remain the same
 
 
-    #How to slice strings
+How to join strings
 n = input
 x = input()
 first_half = list(map(int, x[:n]))
-#this is going to the first half of th string and counts n times
-# eg 2421 = 24 
-#it then uses list to create [2, 4]
+this is going to the first half of th string and counts n times
+eg 2421 = 24 
+it then uses list to create [2, 4]
 
 all(first_half[i] < second_half[i] for i in range(n))
-#all checks to make sure EVERY STATEMENT IS TRUE; if one statement is false, the if statement fails. 
+all checks to make sure EVERY STATEMENT IS TRUE; if one statement is false, the if statement fails. 
 
 
 
@@ -165,15 +165,15 @@ if p.issubset(z)
 
 
 17/08/2026
-#How to do capitalization
-#This code just takes the first letter, makes it capital, and makes all other letters lowercase
+How to do capitalization
+This code just takes the first letter, makes it capital, and makes all other letters lowercase
 word = input().capitalize()
 print(word)
 
 #How to  make only the first letter capital and leave everything else the same
 word = list(input())
-word[0] = word[0].upper()  # Saves the uppercase letter
-print("".join(word))       # Converts the list back to a normal word
+word[0] = word[0].upper()  Saves the uppercase letter
+print("".join(word))       Converts the list back to a normal word
 
 19/08/2026
 1. Always remember we are doing if statements to look for all scenarios, including if > < and = 
@@ -240,3 +240,14 @@ for index, name in enumerate(friends):
 # 0 Alice
 # 1 Bob
 # 2 Charlie
+
+
+25/08/2026
+How to join lists
+say i had
+
+even = [2 4 68 10]
+odd = [ 1 3 5 7 9]
+
+To combine them, just add them 
+combine = even + odd 
