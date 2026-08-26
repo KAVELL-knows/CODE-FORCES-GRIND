@@ -245,9 +245,32 @@ for index, name in enumerate(friends):
 25/08/2026
 How to join lists
 say i had
-
 even = [2 4 68 10]
 odd = [ 1 3 5 7 9]
 
 To combine them, just add them 
 combine = even + odd 
+
+
+26/08/2026
+HOW TO SET UP SETS
+p = input()
+sub = set(p)
+print(p)
+letters = {'H', 'Q', '9'}
+if sub & letters:
+    print("YES")
+else:
+    print("NO")
+
+BASICALLY, SETS MUST BE IN {}       {} is called set or dictionary 
+So input is usually given in a string, but we must convert the string into a {}
+
+
+To do this, we use the set() feature
+so set(input())
+We also have a set that we can create ourselves    {'H', 'I,' '9'}
+so check if one is a subset of the other, we can use 
+intersect 
+intersect is & 
+if letter intersect p 
