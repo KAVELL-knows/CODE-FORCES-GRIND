@@ -1,0 +1,34 @@
+n = int(input())
+a = list(map(int, input().split()))
+
+count = 1 
+max_count = 1 
+for i in range(n - 1):
+    if a[i] <= a[i+1]:
+        count += 1
+        if count > max_count:
+            max_count = count
+    else:
+        count = 1 
+print(max_count)
+
+
+
+
+ALTERNATIVELY, I WROTE THIS CODE AS WELL BUT TLE
+
+n = int(input())
+a = list(map(int, input().split()))
+count = 1 
+trials = [1]
+if n == 1:
+    print("1")
+else:
+    for i in range(n-1):
+        if a[i] <= a[i+1]:
+            count += 1
+            trials.append(count)
+        else:
+            count = 1 
+x = max(trials)
+print(x)
