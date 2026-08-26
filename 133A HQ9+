@@ -1,0 +1,8 @@
+#133A HQ9+
+p = input()
+sub = set(p)
+letters = {'H', 'Q', '9'}
+if sub & letters:
+    print("YES")
+else:
+    print("NO")
