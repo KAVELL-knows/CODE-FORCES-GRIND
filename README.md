@@ -274,3 +274,13 @@ so check if one is a subset of the other, we can use
 intersect 
 intersect is & 
 if letter intersect p 
+
+27/08/2026
+Let's say I had a string like WUBIWUBWUBWUBAMWUBWUBHAPPY
+and I wanted to change all the WUB to spaces
+use .replace()
+x = input().upper().replace("WUB", " ").split()
+y = " ".join(x)
+print(y)
+
+
