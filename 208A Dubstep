@@ -1,0 +1,4 @@
+#208A. Dubstep
+x = input().upper().replace("WUB", " ").split()
+y = " ".join(x)
+print(y)
