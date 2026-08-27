@@ -1,0 +1,9 @@
+337A - Puzzles
+n, m = list(map(int, input().split()))
+p = list(map(int, input().split()))
+p.sort()
+z = []
+for i in range(m - n + 1):
+    diff = p[i + n - 1] - p[i]
+    z.append(diff)
+print(min(z))
