@@ -284,3 +284,33 @@ y = " ".join(x)
 print(y)
 
 
+28/08/2026
+import sys
+data = sys.stdin.read().split()  #reads everything from the input at once. 
+                                     #splits everything wherever there's whitespace.
+    
+if not data:
+        return              #if nothing is input then lead data empty 
+        
+n = int(data[0])        #the data was read and list as alist so T is just to get the number in the list 
+    results = []
+    for i in range(1, n + 1):  #looping through the list, starting from the second number
+        x = int(data[i])
+        count2 = 0
+        count3 = 0  
+        while x % 2 == 0:
+            count2 += 1
+            x //= 2           
+        while x % 3 == 0: #THIS IS PRIME FACTORIZATION 
+            count3 += 1
+            x //= 3
+        if x > 1 or count2 > count3:
+            results.append("-1") 
+        else:
+            y = (2 * count3) - count2
+            results.append(str(y)) 
+    print('\n'.join(results))
+
+
+if __name__ == '__main__':
+    solve()
