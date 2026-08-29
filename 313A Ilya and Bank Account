@@ -1,0 +1,12 @@
+#313A Ilya and Bank Account
+n = int(input())
+if n > 0:
+    print(n)
+else: 
+    n = abs(n)
+    p = n // 10 
+    q = ((n // 100) *10) + (n % 10)
+    if p < q: 
+        print(-1 * p)
+    else:
+        print(-1 * q)
