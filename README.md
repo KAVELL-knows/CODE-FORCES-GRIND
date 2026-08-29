@@ -314,3 +314,18 @@ n = int(data[0])        #the data was read and list as alist so T is just to get
 
 if __name__ == '__main__':
     solve()
+
+29/08/2026
+INTERESTING WAY TO THINK
+WE WANT TO GET AS LARGE A NUMBER AS POSSIBLE BY EITHER REMOVING THE SECOND-TO-LAST OR LAST NUMBER 
+n = int(input())
+if n > 0:
+    print(n)
+else: 
+    n = abs(n)
+    p = n // 10 
+    q = ((n // 100) *10) + (n % 10)
+    if p < q: 
+        print(-1 * p)
+    else:
+        print(-1 * q)
