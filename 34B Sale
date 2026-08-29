@@ -1,0 +1,16 @@
+#34B Sale
+n, m = list(map( int, input().split()))
+x = list(map( int, input().split()))
+neg =[]
+for i in range(n):
+    if x[i] < 0:
+        neg.append(x[i])
+neg.sort()
+y = 0
+if len(neg) < m:
+    p = len(neg)
+else:
+    p = m
+for i in range(p):
+    y = y + neg[i]
+print(abs(y))
