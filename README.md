@@ -368,4 +368,26 @@ for i in range(m):
     noun.append(y)
 for i in adj:                    # 'i' becomes the current STRING inside the 'adj' list
     for j in noun:
-        print(f"{i} as {j}")   {} PRINTS THE ACTUAL WORD 
+        print(f"{i} as {j}")   {} PRINTS THE ACTUAL WORD
+
+
+31/08/2026
+THINKING LIKE A PROGRAMMER 
+
+we have so many numbers
+
+3 6 9 
+and we want to check if they follow AP... therefore they must have a common difference. If it's not, we can adjust one of the numbers by multiplying by a positive integer. 
+
+To solve this, we must realize
+
+x - y == y - z 
+x + z == 2y
+
+so     (x + z) % (2 * y) == 0
+
+2. SINCE M MUST BE POSITIVE, THEN
+2y - z = mx
+
+(2 * y - z) > 0 and (2 * y - z) % x == 0:
+(2 * y - x) > 0 and (2 * y - x) % z == 0:
