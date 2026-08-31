@@ -353,3 +353,19 @@ if __name__ == '__main__':
 fruits = ["apple", "banana", "cherry", "banana"]
 position = fruits.index("banana")
 print(position)  # Output: 1
+
+
+
+n = int(input())                  #THIS IS CALLED INTEGER 
+m = int(input())
+adj = []                          #THIS IS A LIST
+noun = []
+for i in range(n):
+    x = input().capitalize()      #This is a string
+    adj.append(x)                 #ADDED a STRING TO A LIST 
+for i in range(m):
+    y = input().lower()
+    noun.append(y)
+for i in adj:                    # 'i' becomes the current STRING inside the 'adj' list
+    for j in noun:
+        print(f"{i} as {j}")   {} PRINTS THE ACTUAL WORD 
