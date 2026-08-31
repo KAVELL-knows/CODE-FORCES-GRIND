@@ -1,0 +1,12 @@
+#1624B. Make AP
+n = int(input())
+for i in range(n):
+    x, y, z = list(map(int, input().split()))
+    if (2 * y - z) > 0 and (2 * y - z) % x == 0:
+        print("YES")
+    elif (x + z) % (2 * y) == 0:
+        print("YES")
+    elif (2 * y - x) > 0 and (2 * y - x) % z == 0:
+        print("YES")
+    else:
+        print("NO")
