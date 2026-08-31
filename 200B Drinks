@@ -1,0 +1,7 @@
+#200B Drinks
+
+n = int(input())
+x = list(map(int, input().split()))
+y = sum(x)
+p = y/n
+print(f"{p:.12f}")
