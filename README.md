@@ -329,3 +329,27 @@ else:
         print(-1 * p)
     else:
         print(-1 * q)
+
+30/08/2026
+HOW DO WE SHIFT THE KEYS ON THE EYBAORD BY 1 POSITION DEPENDING ON LEFT OR RIGHT
+
+import sys
+if __name__ == '__main__':
+    x = []
+    n = sys.stdin.readline().strip()
+    text = sys.stdin.readline().strip()
+    keyboard = "qwertyuiopasdfghjkl;zxcvbnm,./"
+    if n == 'R':
+        shift = -1 
+    else:
+        shift = 1
+    for char in text:
+        current_index = keyboard.index(char)
+        x.append(keyboard[current_index + shift])    
+    print("".join(x))
+
+.index()
+
+fruits = ["apple", "banana", "cherry", "banana"]
+position = fruits.index("banana")
+print(position)  # Output: 1
