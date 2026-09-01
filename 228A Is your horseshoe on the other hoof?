@@ -1,0 +1,6 @@
+#228A. Is your horseshoe on the other hoof?
+
+n = list(map(int, input().split()))
+unique = len(set(n))
+buy = 4 - unique
+print(buy)
