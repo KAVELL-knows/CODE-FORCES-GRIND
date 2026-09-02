@@ -1,0 +1,19 @@
+#1343A. Candies
+n = int(input())
+for i in range(n):
+    p = int(input())
+    count = 1
+    k = 3
+    if p % k == 0:
+        x = p // k
+        print(x)
+    else:
+        while k > 1:
+            if p % k == 0:
+                x = p // k
+                print(x)
+                break
+            else:
+                count = count * 2
+                k = (2* count) + k
+          
