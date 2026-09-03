@@ -377,7 +377,7 @@ THINKING LIKE A PROGRAMMER
 we have so many numbers
 
 3 6 9 
-and we want to check if they follow AP... therefore they must have a common difference. If it's not, we can adjust one of the numbers by multiplying by a positive integer. 
+and we want to check if they follow AP... therefore, they must have a common difference. If it's not, we can adjust one of the numbers by multiplying by a positive integer. 
 
 To solve this, we must realize
 
@@ -401,8 +401,20 @@ ones = s.count('1')
 
 Use count to count the number of 1s and 0s
 
-
-
+2.
+ALTERNATIVE SOLUTION
+THIS IS AN ALTERNATIVE WAY TO ADD NUMBERS TO A LIST RATHER THAN CREATE A LIST AND APPEND + JOIN 
+n = int(input())
+for i in range(n):
+    x = input()
+    y = input()
+    z = ""
+    for i in range(len(x)):
+        if a[i] == b[i]:
+            z += "0"
+        else:
+            z += "1"
+    print(z)
 
 
 
