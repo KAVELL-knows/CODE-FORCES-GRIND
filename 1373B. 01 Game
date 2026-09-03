@@ -1,0 +1,11 @@
+#1373B. 01 Game
+t = int(input())
+for i in range(t):
+    s = input()
+    z = s.count('0')
+    o = s.count('1')
+    max_moves = min(z, o)
+    if max_moves % 2 == 1:
+        print("DA")
+    else:
+        print("NET")
