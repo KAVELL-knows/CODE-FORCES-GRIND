@@ -1,0 +1,16 @@
+#1475B New Year's Number
+
+t = int(input())
+for i in range(t):
+    n = int(input())
+    count = 0
+    if n % 2020 == 0:
+        print("YES")
+    else:
+        while n > 2020:
+            n = n - 2020
+            count += 1
+        if n <= count:
+            print("YES")     
+        else:
+            print("NO") 
