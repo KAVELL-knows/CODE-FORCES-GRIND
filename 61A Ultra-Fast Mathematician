@@ -1,0 +1,25 @@
+#61A Ultra-Fast Mathematician
+x = input()
+y = input()
+new_number = []
+for i in range(len(x)):
+    if x[i] == y[i]:
+        new_number.append('0')
+    else:
+        new_number.append('1')
+print("".join(new_number))
+
+
+ALTERNATIVE SOLUTION
+#61A Ultra-Fast Mathematician
+n = int(input())
+for i in range(n):
+    x = input()
+    y = input()
+    z = ""
+    for i in range(len(x)):
+        if a[i] == b[i]:
+            z += "0"
+        else:
+            z += "1"
+    print(z)
