@@ -391,3 +391,25 @@ so     (x + z) % (2 * y) == 0
 
 (2 * y - z) > 0 and (2 * y - z) % x == 0:
 (2 * y - x) > 0 and (2 * y - x) % z == 0:
+
+03/08/2026
+Let's say you had a string
+so n = input()
+n = 101010110
+zero = s.count('0')
+ones = s.count('1')
+
+Use count to count the number of 1s and 0s
+
+
+
+
+
+
+
+
+
+
+
+
+    
