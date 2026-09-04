@@ -417,6 +417,51 @@ for i in range(n):
     print(z)
 
 
+04/08/2026
+Here is an alternative way of inputting a value
+
+import sys
+phrase = sys.stdin.readline().strip('\r\n')
+
+
+CODE WORTH LEARNING WHEN IT COMES TO KEYPADS AND STRINGS
+
+
+CCC '08 J3 - GPS Text Entry
+import sys
+list = {
+    'X': {
+        "A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5,
+        "G": 0, "H": 1, "I": 2, "J": 3, "K": 4, "L": 5,
+        "M": 0, "N": 1, "O": 2, "P": 3, "Q": 4, "R": 5,
+        "S": 0, "T": 1, "U": 2, "V": 3, "W": 4, "X": 5,
+        "Y": 0, "Z": 1, " ": 2, "-": 3, ".": 4, "enter": 5
+    },
+    'Y': {
+        "A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0,
+        "G": 1, "H": 1, "I": 1, "J": 1, "K": 1, "L": 1,
+        "M": 2, "N": 2, "O": 2, "P": 2, "Q": 2, "R": 2, 
+        "S": 3, "T": 3, "U": 3, "V": 3, "W": 3, "X": 3,
+        "Y": 4, "Z": 4, " ": 4, "-": 4, ".": 4, "enter": 4
+    }
+}
+route = 0 
+phrase = sys.stdin.readline().strip('\r\n')
+
+prev_x = 0
+prev_y = 0
+
+for char in phrase:
+    x = list['X'][char]
+    y = list['Y'][char]
+    route = route +  abs(x - prev_x) + abs(y - prev_y)
+    prev_x = x
+    prev_y = y
+
+x_enter = list['X']["enter"]
+y_enter = list['Y']["enter"]
+route = route + abs(x_enter - prev_x) + abs(y_enter - prev_y)
+print(route)
 
 
 
