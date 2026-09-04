@@ -1,0 +1,11 @@
+1328A. Divisibility Problem
+import sys
+n = int(sys.stdin.readline())
+for i in range(n):
+    x, y = map(int, sys.stdin.readline().split())
+    if x % y == 0:
+        print(0)
+    else:
+        z = x % y 
+        p = y - z
+        print(p)
