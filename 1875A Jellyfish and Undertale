@@ -1,0 +1,15 @@
+#1875A. Jellyfish and Undertale
+#x = max value
+#y = initial value
+#z = no of tools
+n = int(input())
+for i in range(n):
+    x, y , z = map(int, input().split())
+    p = list(map(int, input().split()))
+    for i in p:
+        if i >= x:
+            i = x - 1
+            y += i
+        else:
+            y += i
+    print(y)
