@@ -1,0 +1,31 @@
+#556A. Case of the Zeros and Ones
+n = int(input())
+s = input()
+count0 = s.count('0')
+count1 = s.count('1')
+if count1 <= count0:
+    y = n -(count1 * 2)
+else:
+    y = n - (count0 * 2)
+print(y)
+
+It had this solution at first, but I got a TLE error. 
+
+
+#556A. Case of the Zeros and Ones
+n = int(input())
+x = int(input())
+count1 = 0
+count0 = 0
+for i in range(n):
+    r = x % 10
+    if r == 1:
+        count1 += 1
+    else:
+        count0 += 1
+    x = x//10
+if count1 <= count0:
+    y = n -(count1 * 2)
+else:
+    y = n - (count0 * 2)
+print(y)
