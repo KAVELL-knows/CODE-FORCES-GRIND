@@ -464,6 +464,17 @@ route = route + abs(x_enter - prev_x) + abs(y_enter - prev_y)
 print(route)
 
 
+07/09/2026
+HOW TO COUNT ON A STRING
+n = int(input())
+s = input()
+count0 = s.count('0')
+count1 = s.count('1')
+if count1 <= count0:
+    y = n -(count1 * 2)
+else:
+    y = n - (count0 * 2)
+print(y)
 
 
 
