@@ -479,5 +479,22 @@ print(y)
 
 
 
+08/09/2026
+
+Here is a method of doing True and False in while statements
+
+
+possible = True
+for i in range(n - 2, -1, -1):
+while x[i] >= x[i+1] and x[i] > 0:
+          x[i] //= 2
+          count += 1
+if x[i] >= x[i+1]:
+          possible = False
+          break
+if possible:  # If the switch is still True (YES)
+print(count)
+else:         # If the switch was flipped to False (NO)
+print(-1)
 
     
