@@ -1,0 +1,14 @@
+#469 A. I Wanna Be the Guy
+n = int(input())
+group = []
+x = list(input().split())[1:]
+y = list(input().split())[1:]
+for i in range(len(x)):
+    group.append(x[i])
+for i in range(len(y)):
+    group.append(y[i])
+p = len(set(group))
+if p >= n:
+    print("I become the guy.")
+else:
+    print("Oh, my keyboard!")
