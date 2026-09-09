@@ -497,4 +497,13 @@ print(count)
 else:         # If the switch was flipped to False (NO)
 print(-1)
 
-    
+
+09/09/2026
+
+in the index notation the list itself is saved from 
+
+index 1 and above. 
+x = list(input().split())[1:]
+
+
+
