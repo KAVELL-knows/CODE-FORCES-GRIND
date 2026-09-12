@@ -511,14 +511,20 @@ This code print the unqie letters if {a, b , c, a, b, c} is enterred.
 
 s = input().strip("{}")
 
-#so you input a string and in this string you take all the letters and inputs except {} so that would be { and } 
-#if you didnt want it to have ab c it would be .strip(abcd)
+so you input a string and in this string you take all the letters and inputs except {} so that would be { and } 
+if you didnt want it to have ab c it would be .strip(abcd)
 
 if s == "":
     print(0)
 else:
-    y = s.split(", ")       #(s.split(", ")): Splits by the comma and the space together.
+    y = s.split(", ")       (s.split(", ")): Splits by the comma and the space together.
     unique = set(y)
     print(len(unique))
 
+SECOND PROBLEM
 
+CHECKS FOR INTEGERS
+
+if (i**0.5).is_integer():
+          count += 1
+print(count)
