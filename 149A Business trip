@@ -1,0 +1,15 @@
+#149A. Business trip
+k = int(input())
+x = list(map(int, input().split()))
+x.sort(reverse=True)
+count = 0
+trials= 0
+i = -1
+if sum(x) < k:
+    print("-1")
+else:
+    while count < k:
+        i = i + 1
+        count = count + x[i]
+        trials += 1
+    print(trials)
