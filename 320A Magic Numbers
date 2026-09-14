@@ -1,0 +1,13 @@
+#320A. Magic Numbers
+n = input()
+if n[0] == '4':
+    print("NO")
+elif '444' in n:
+    print("NO")
+else:
+    for char in n:
+        if char != '4' and char != '1':
+            print("NO")
+            break
+    else:
+        print("YES")
