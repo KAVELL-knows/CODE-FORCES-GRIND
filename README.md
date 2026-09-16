@@ -528,3 +528,29 @@ CHECKS FOR INTEGERS
 if (i**0.5).is_integer():
           count += 1
 print(count)
+
+
+
+16/09/2026
+HOW TO DO FACTORIALS IN PYTHON
+
+To do factorial, start by importing math
+
+then the factorial function is just math.factorial(n)
+
+So, if we wanted to find the factorial of the number n 
+
+the answer would be 
+
+import math
+math.factorial(n)
+
+
+
+Alternatively, to find the factorial manually, we can just do 
+
+
+
+
+COMBINATORICS QUESTION
+lets say i had a 
