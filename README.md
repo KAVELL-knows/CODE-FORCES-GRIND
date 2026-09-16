@@ -546,11 +546,13 @@ import math
 math.factorial(n)
 
 
-
 Alternatively, to find the factorial manually, we can just do 
 
 
+#manual code for the factorial 
+n = int(input())
+result = 1
+for i in range(1, n+1):
+    result = result * i 
+print(result)
 
-
-COMBINATORICS QUESTION
-lets say i had a 
