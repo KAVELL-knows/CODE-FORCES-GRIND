@@ -1,0 +1,11 @@
+#1543 A. Exciting Bets
+n = int(input())
+for i in range(n):
+    a, b = list(map(int, input().split()))
+    if a == b:
+        print("0 0")
+    else:
+        max_value = abs(a-b)
+        z = a % max_value
+        min_value = min(z, max_value - z)
+        print(f"{max_value} {min_value}")
