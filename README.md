@@ -556,3 +556,13 @@ for i in range(1, n+1):
     result = result * i 
 print(result)
 
+
+18/09/2026
+nums = []
+new_list [5, 6, 7, 5, 4, 5]
+nums[:] = new_list
+print(nums)
+
+the output would be [5, 6, 7, 5, 4, 5]
+
+the reason is num[:] = new_list takes all the values from new list and puts it into nums 
