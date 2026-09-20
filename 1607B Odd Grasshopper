@@ -1,0 +1,21 @@
+#1607B. Odd Grasshopper
+n = int(input())
+for i in range(n):
+    x, y = list(map(int, input().split()))
+    if y % 4 == 0:
+        print(x)
+    elif y % 4 == 1:
+        if x % 2 == 0:
+            print(x - y) 
+        else:
+            print(x + y) 
+    elif y % 4 == 2:
+        if x % 2 == 0:
+            print(x + 1) 
+        else:
+            print(x - 1) 
+    elif y % 4 == 3:
+        if x % 2 == 0:
+            print(x + y + 1)
+        else:
+            print(x - y - 1)
