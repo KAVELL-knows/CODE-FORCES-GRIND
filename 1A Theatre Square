@@ -1,0 +1,11 @@
+#1A Theatre Square
+n, m, a = list(map(int, input().split()))
+if n % a == 0:
+    block1 = n//a   
+else:
+    block1 = (n//a)+ 1 
+if m % a == 0:
+    block2 = m//a  
+else:
+    block2 = (m//a) + 1 
+print(block1 * block2) 
