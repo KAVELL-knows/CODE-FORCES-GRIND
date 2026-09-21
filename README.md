@@ -563,6 +563,30 @@ new_list [5, 6, 7, 5, 4, 5]
 nums[:] = new_list
 print(nums)
 
-the output would be [5, 6, 7, 5, 4, 5]
+The output would be [5, 6, 7, 5, 4, 5]
 
-the reason is num[:] = new_list takes all the values from new list and puts it into nums 
+The reason is num[:] = new_list takes all the values from the new list and puts them into nums 
+
+
+20/09/2026
+This is a tutorial on how to code little images in your terminal, for example, the number 4
+
+elif n == 4:
+    print("")
+    print("*     *")
+    print("*     *")
+    print("*     *")
+    print(" * * *")
+    print("      *")
+    print("      *")
+    print("      *")
+    print("")
+    
+The Rule: Never leave invisible spaces at the end of a line.
+Example: print(" * * * ") has a space after the third asterisk. To a grader, " * * * " and " * * *" are completely different strings. Always strip out that last space.
+
+
+The Rule: If a row is supposed to be completely blank, do not print spaces to maintain a "grid" shape. 
+Print an empty string.
+Example: Use print(""), never print("       ")
+
