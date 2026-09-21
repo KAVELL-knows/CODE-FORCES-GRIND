@@ -1,0 +1,10 @@
+#118A. String Task
+
+s = list(input().lower())
+word = []
+finalword = []
+for i in s:
+    if i != 'a' and i != "o" and i != "u" and i != "e" and i != "y" and i != "i" and i != " ":
+        word.append(".")
+        word.append(i)
+print("".join(word))
