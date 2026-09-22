@@ -585,8 +585,42 @@ elif n == 4:
 The Rule: Never leave invisible spaces at the end of a line.
 Example: print(" * * * ") has a space after the third asterisk. To a grader, " * * * " and " * * *" are completely different strings. Always strip out that last space.
 
-
 The Rule: If a row is supposed to be completely blank, do not print spaces to maintain a "grid" shape. 
 Print an empty string.
 Example: Use print(""), never print("       ")
+
+
+21/09/2026
+Python counter class
+
+from collections import Counter
+This counts how many times each item appears in the list
+
+Let's assume we had a list called cool_list
+
+count = Counter(cool_list)
+Creates a dictionary-like object mapping each number to how many times it appeared 
+(e.g., {5: 3, 1: 2} means 5 appeared 3 times).
+
+
+Let's say you wanted to calculate the most frequent. In that case, you can do 
+
+mostfrequent  = count.most_common()
+
+This converts the counts into a list of tuples sorted from highest frequency to lowest frequency
+(e.g., [(5, 3), (1, 2)])
+most_frequent [0]  would give the most frequent element 
+
+most_frequent[0][0] gives the most frequent number as well as how many times that number occurred
+
+if most_frequent[0][1] == most_frequent[1][1]:
+Checks if there is a tie for the most popular number by comparing the frequency counts of the top two items
+
+FOR TIED ITEMS
+[item[0] for item in most_frequent if item[1] == highest_most_frequent]
+
+
+
+
+
 
