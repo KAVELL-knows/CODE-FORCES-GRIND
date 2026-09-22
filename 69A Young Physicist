@@ -1,0 +1,21 @@
+#69A. Young Physicist
+n = int(input())
+xvectors = []
+yvectors = []
+zvectors = []
+for i in range(n):
+    x, y , z = list(map(int, input().split()))
+    xvectors.append(x)
+    yvectors.append(y)
+    zvectors.append(z)
+p = sum(xvectors)
+q = sum(yvectors)
+k = sum(zvectors)
+if p != 0:
+    print("NO")
+elif q != 0:
+    print("NO")
+elif k != 0:
+    print("NO")
+else:
+    print('YES')
