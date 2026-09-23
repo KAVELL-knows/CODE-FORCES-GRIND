@@ -621,6 +621,17 @@ FOR TIED ITEMS
 
 
 
+23/09/2026
+How to search a word 
+
+s = input()
+word = "hello"
+count = 0
+for i in s:
+    if i == word[count]:
+        count += 1
+        if count == 5:
+            break
 
 
 
