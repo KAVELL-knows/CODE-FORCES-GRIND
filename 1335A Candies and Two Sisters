@@ -1,0 +1,9 @@
+#1335A. Candies and Two Sisters
+n = int(input())
+for i in range(n):
+    x = int(input())
+    if x % 2 == 0:
+        y = (x // 2) - 1
+    else:
+        y = x // 2
+    print(y)
