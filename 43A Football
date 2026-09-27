@@ -1,0 +1,12 @@
+#43A. Football
+from collections import Counter 
+n = int(input())
+games = []
+
+for i in range(n):
+    x = input()  
+    games.append(x)
+
+counter_object = Counter(games) 
+mostfrequent = counter_object.most_common()
+print(mostfrequent[0][0])
