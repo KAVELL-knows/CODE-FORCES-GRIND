@@ -1,0 +1,13 @@
+#500A. New Year Transportation
+x, y = list(map(int, input().split()))
+count = 1
+nums = list(map(int, input().split()))
+while count < y:
+    count = count + nums[count-1]
+    if count == y:
+        print("YES")
+        break
+    elif count > y:
+        print("NO")
+        break
+        
