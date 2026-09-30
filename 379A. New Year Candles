@@ -1,0 +1,9 @@
+#379A. New Year Candles
+a, b = list(map(int, input().split()))
+hours = a  
+while a >= b:
+    c = a // b      
+    left = a % b     
+    hours += c    
+    a = c + left
+print(hours)
