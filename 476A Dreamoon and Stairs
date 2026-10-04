@@ -1,0 +1,19 @@
+#476A. Dreamoon and Stairs
+n, m = map(int, input().split())
+if n < m:
+    print(-1)
+else:
+    count = 0
+    minimal = 0
+    
+    while count < n:
+        if n - count == 1:
+            count += 1
+            minimal += 1
+        else:
+            count += 2
+            minimal += 1
+
+    while minimal % m != 0:
+        minimal += 1
+    print(minimal)
