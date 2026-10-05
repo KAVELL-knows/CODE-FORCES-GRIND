@@ -1,0 +1,13 @@
+#1342A. Road To Zero
+n = int(input())
+for i in range(n):
+    countb = 0
+    counta = 0  
+    x, y = map(int, input().split())
+    a, b = map(int, input().split())
+    if b < (2 * a):
+        remain = abs(x-y)
+        minimum = min(x, y)
+        print((minimum * b) + (remain * a))
+    else:
+        print( a * (x + y))
