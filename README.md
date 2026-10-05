@@ -634,4 +634,19 @@ for i in s:
             break
 
 
+04/10/2026
+I need to get in the habit of using .count()  rather than using a for loop to count. .count() can count strings list anything normal 
 
+s = input()
+
+happy = s.count(":-)")
+sad = s.count(":-(")
+
+if happy == 0 and sad == 0:
+    print("none")
+elif happy > sad:
+    print("happy")
+elif sad > happy:
+    print("sad")
+else:
+    print("unsure")
