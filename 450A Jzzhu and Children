@@ -1,0 +1,17 @@
+#450A. Jzzhu and Children
+import math
+n, m = map(int, input().split())
+x = list(map(int, input().split()))
+
+max = 0
+final = 1
+
+for i in range(n):
+    rounds = math.ceil(x[i] / m)
+    
+
+    if rounds >= max:
+        max = rounds
+        final = i + 1  
+
+print(final)
