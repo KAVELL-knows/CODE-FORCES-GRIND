@@ -1,0 +1,3 @@
+#124A. The number of positions
+n, a, b = list(map(int, input().split()))
+print(min(n-a,b+1))
