@@ -1,0 +1,7 @@
+#151A. Soft Drinking
+n, k , l, c, d, p, nl, np = list(map(int, input().split())) 
+x = (k * l) // nl
+y = c * d
+z = p // np
+low = min(x, y , z)
+print(low//n)
