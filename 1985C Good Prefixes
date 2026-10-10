@@ -1,0 +1,18 @@
+#1985C. Good Prefixes
+n = int(input())
+
+for i in range(n):
+    x = int(input())
+    y = list(map(int, input().split()))
+
+    count = 0 
+    total = 0 
+    high = 0
+
+    for i in range(x):
+        if y[i] > high:
+            high = y[i]
+        total += y[i]
+        if high * 2 == total:
+            count += 1 
+    print(count)
