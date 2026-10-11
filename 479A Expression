@@ -1,0 +1,13 @@
+#479A. Expression
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+k = a * b * c 
+l = a + b + c
+m = (a + b) * c
+p = a * (b + c)
+s = (a * b) + c
+q = a + (b * c)
+print(max(k, l , m, p, s, q))
