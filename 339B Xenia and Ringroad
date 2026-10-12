@@ -1,0 +1,19 @@
+#339B. Xenia and Ringroad
+m, n = list(map(int, input().split()))
+x = list(map(int, input().split()))
+
+current = 1 
+time = 0 
+
+for i in range(n):
+    if current <= x[i]:
+        y = x[i] - current
+        time += y 
+        current = x[i]
+    else:
+        rem = m - current
+        y = x[i] +rem
+        time += y 
+        current = x[i]
+
+print(time)
