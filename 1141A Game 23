@@ -1,0 +1,20 @@
+#1141A. Game 23
+x, y = list(map(int, input().split()))
+count = 0 
+
+if y % x != 0:
+    print("-1")
+else:
+    quotient = y // x
+    while quotient != 1:
+        if quotient % 3 == 0:
+            quotient = quotient // 3 
+            count += 1 
+        elif quotient % 2 == 0:
+            quotient = quotient // 2
+            count += 1 
+        else:
+            count = -1
+            break
+            
+    print(count)
