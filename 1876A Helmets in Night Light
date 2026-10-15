@@ -1,0 +1,36 @@
+#1876A Subarrays Distinct Element Sum of Squares I
+t = int(input())
+
+for i in range(t):
+    n, p = map(int, input().split())
+    
+
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    
+    residents = []
+    for i in range(n):
+        residents.append((b[i], a[i]))
+        
+    residents.sort()
+    
+    cost = p
+    rem = n - 1
+    
+    for j, capacity in residents:
+        if rem <= 0:
+            break
+            
+        if j >= p:
+            break
+            
+        take = min(rem, capacity)
+        cost += take * j
+        rem -= take
+        
+    if rem > 0:
+        cost += rem * p
+        
+    print(cost)
+    
+
