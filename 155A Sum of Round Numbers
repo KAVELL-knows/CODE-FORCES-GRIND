@@ -1,0 +1,21 @@
+#155A. Sum of Round Numbers
+
+
+n = int(input())
+scores = list(map(int, input().split()))
+
+current_max = scores[0]
+current_min = scores[0]
+
+amazing_count = 0
+
+for i in range(1, n):
+    if scores[i] > current_max:
+        amazing_count += 1
+        current_max = scores[i]  
+        
+    elif scores[i] < current_min:
+        amazing_count += 1
+        current_min = scores[i] 
+
+print(amazing_count)
