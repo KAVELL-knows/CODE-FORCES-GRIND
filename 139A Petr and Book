@@ -1,0 +1,25 @@
+#139A. Petr and Book
+
+pages = int(input())
+mon, tues, wed, thurs, fri, sat, sun = list(map(int, input().split()))
+total = mon + tues + wed + thurs + fri + sat + sun
+
+rem = pages % total
+
+if rem == 0:
+    rem = total
+
+if rem - mon <= 0:
+    print("1")
+elif rem - (mon + tues) <= 0:
+    print("2")
+elif rem - (mon + tues + wed) <= 0:
+    print("3")
+elif rem - (mon + tues + wed + thurs) <= 0:
+    print("4")
+elif rem - (mon + tues + wed + thurs + fri) <= 0:
+    print("5")
+elif rem - (mon + tues + wed + thurs + fri + sat) <= 0:
+    print("6")
+else:
+    print("7")
