@@ -1,0 +1,10 @@
+1996A. Legs
+
+t = int(input())
+for i in range(t):
+    n = int(input())
+
+    cows = n // 4
+    rem = n - (cows * 4)
+    chicken = rem // 2
+    print(chicken + cows)
