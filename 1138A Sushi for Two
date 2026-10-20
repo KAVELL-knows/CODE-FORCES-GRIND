@@ -1,0 +1,25 @@
+1138 A. Sushi for Two
+
+n = int(input())
+x = list(map(int, input().split()))
+
+consec = []
+count = 1
+max = 0 
+
+
+for i in range(1, n):
+    if x[i] == x[i - 1]:
+        count += 1
+    else:
+        consec.append(count)
+        count = 1
+consec.append(count)  
+
+
+for i in range(len(consec) - 1):
+    valid_len = 2 * min(consec[i], consec[i + 1])
+    if valid_len > max:
+        max = valid_len
+
+print(max)
