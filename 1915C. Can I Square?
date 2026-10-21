@@ -1,0 +1,16 @@
+#1915C. Can I Square?
+import math 
+
+t = int(input())
+
+for i in range(t):
+    num = int(input())
+    n = list(map(int, input().split()))
+    total = sum(n)
+
+    root = math.isqrt(total)
+
+    if root * root == total:
+        print("YES")
+    else:
+        print("NO") 
