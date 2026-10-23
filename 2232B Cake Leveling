@@ -1,0 +1,25 @@
+#2232B. Cake Leveling
+n = int(input())
+
+for i in range(n):
+    answer = []
+    sum = 0 
+    count = 0 
+
+    min_average = float('inf')
+
+    l = int(input())
+    layers = list(map(int, input().split()))
+
+    for x in layers:
+        sum += x 
+        count += 1 
+
+        current_average = sum // count
+
+        if current_average < min_average:
+            min_average = current_average
+            
+        answer.append(min_average)
+
+    print(*answer)
