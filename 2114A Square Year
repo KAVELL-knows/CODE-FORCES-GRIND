@@ -1,0 +1,14 @@
+2114A Square Year
+import math
+
+t = int(input())
+
+for i in range(t):
+    
+    n = int(input())
+    root = math.isqrt(n)
+
+    if root * root == n:
+        print(f"0 {root}")
+    else:
+        print("-1")
