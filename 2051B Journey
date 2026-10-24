@@ -1,0 +1,20 @@
+#2051B. Journey
+
+t = int(input())
+for i in range(t):
+    count = 0 
+    n, a, b, c = list(map(int, input().split()))
+    iteration = a + b + c
+
+    rem = n % iteration
+    trial = n // iteration
+    count = trial * 3
+
+    if rem == 0:
+        print(count)
+    elif rem - a <= 0:
+        print(count + 1)
+    elif rem - (a + b) <= 0:
+        print(count + 2)
+    elif rem - (a + b + c) <= 0:
+        print(count + 3)
