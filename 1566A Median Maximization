@@ -1,0 +1,9 @@
+t = int(input())
+for i in range(t):
+    l, s = list(map(int, input().split()))
+    count = (l // 2) + 1
+
+    final = s // count 
+
+    print(final)
+ 
