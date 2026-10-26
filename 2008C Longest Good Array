@@ -1,0 +1,21 @@
+#2008C Longest Good Array
+import math
+
+tokens = open(0).read().split()
+
+if tokens:
+    t = int(tokens[0])
+    count = 1
+    
+    for i in range(t):
+        l = int(tokens[count])
+        r = int(tokens[count + 1])
+        count += 2
+        
+        diff = r - l
+        
+        if diff == 0:
+            print(1)
+        else:
+            n = (-1 + math.isqrt(1 + 8 * diff)) // 2
+            print(n + 1)
