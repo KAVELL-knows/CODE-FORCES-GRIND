@@ -1,0 +1,22 @@
+#1352A. Sum of Round Numbers
+
+t = int(input())
+for i in range(t):
+    
+    n = input()
+    y = n.count("0")
+    length_of_number = len(n)
+    count = length_of_number    
+    answer = []
+
+    for i in n:
+        count -= 1
+        if i != '0':
+            n = 10**count * int(i)
+            answer.append(n)
+        
+
+    print(length_of_number - y)
+    print(*answer) 
+
+            
