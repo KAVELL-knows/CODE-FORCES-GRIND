@@ -1,0 +1,24 @@
+#706B. Interesting drink
+ 
+n = int(input())
+x = list(map(int, input().split()))
+x.sort()
+ 
+no_of_days = int(input())
+ 
+for i in range(no_of_days):
+ 
+    money = int(input())
+    low = 0
+    high = len(x) - 1
+ 
+    while low <= high:
+        mid = low + (high - low) // 2
+ 
+        midpoint = x[mid]
+    
+        if money < midpoint:
+            high = mid - 1
+        else:
+            low = mid + 1
+    print(low)
