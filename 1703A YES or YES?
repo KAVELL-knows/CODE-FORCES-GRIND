@@ -1,0 +1,11 @@
+#1703A. YES or YES?
+
+t = int(input())
+
+for i in range(t):
+    word = input().upper()
+
+    if word == 'YES':
+        print("YES")
+    else:
+        print("NO")
