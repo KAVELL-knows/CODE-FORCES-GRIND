@@ -1,0 +1,19 @@
+n = int(input())
+laptops = []
+
+for _ in range(n):
+    price, quality = map(int, input().split())
+    laptops.append((price, quality))
+
+laptops.sort()    
+
+found = False
+for k in range(1, n):
+    if laptops[k][1] < laptops[k-1][1]:
+        found = True
+        break
+
+if found:
+    print("Happy Alex")
+else:
+    print("Poor Alex")
