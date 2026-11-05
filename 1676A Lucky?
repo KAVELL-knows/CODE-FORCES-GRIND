@@ -1,0 +1,13 @@
+#1676A. Lucky?
+n = int(input())
+total1 = 0 
+total2 = 0
+
+for i in range(n):
+    num = input()
+    total1 = int(num[0]) + int(num[1]) + int(num[2])
+    total2 = int(num[3]) + int(num[4]) + int(num[5])
+    if total1 == total2:
+        print("YES")
+    else:
+        print("NO")
