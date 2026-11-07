@@ -1,0 +1,27 @@
+#1669F. Eating Candies
+
+t = int(input())
+for i in range(t):
+    n = int(input())
+    candies = list(map(int, input().split()))
+
+    weight_left = 0 
+    weight_right = 0
+    answer = 0 
+
+    left = 0 
+    right = n - 1
+
+    while left <= right:
+
+        if weight_left <= weight_right:
+            weight_left += candies[left]
+            left += 1
+        else:
+            weight_right += candies[right]
+            right -= 1
+
+        if weight_left == weight_right:
+            answer = left + (n - 1 - right)
+
+    print(answer)
