@@ -1,0 +1,29 @@
+n = int(input())
+first = sum(map(int, input().split()))
+second = sum(map(int, input().split()))
+final = sum(map(int, input().split()))
+
+print(first - second)
+print(second - final)
+
+
+At first, I had a slower solution:
+#519B. A and B and Compilation Errors
+n = int(input())
+first = list(map(int, input().split()))
+second = list(map(int, input().split()))
+final = list(map(int, input().split()))
+
+for i in first:
+    y = first.count(i)
+    x = second.count(i)
+    if x != y:
+        print(i)
+        break
+
+for j in second:
+    m = second.count(j)
+    n = final.count(j)
+    if m != n:
+        print(j)
+        break
