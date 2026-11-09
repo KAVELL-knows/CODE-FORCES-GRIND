@@ -1,0 +1,17 @@
+#467B Fedor and New Game
+n, m, k = map(int, input().split())
+
+possible = []
+count = 0
+
+for i in range(m):
+  soldier = int(input())
+  possible.append(soldier)
+
+you = int(input())
+
+for soldier in possible:
+  if (you ^ soldier).bit_count() <= k:
+    count += 1
+
+print(count)
