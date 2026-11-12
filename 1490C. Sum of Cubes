@@ -1,0 +1,21 @@
+#1490C. Sum of Cubes
+cubes = {i**3 for i in range(1, 10001)}
+
+t = int(input())
+
+for i in range(t):
+    x = int(input())
+    found = False
+    
+    for a in range(1, 10001):
+        a_cubed = a**3
+        if a_cubed >= x:
+            break
+        if (x - a_cubed) in cubes:
+            found = True
+            break
+            
+    if found:
+        print("YES")
+    else:
+        print("NO")
