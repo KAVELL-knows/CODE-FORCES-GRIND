@@ -1,0 +1,18 @@
+#1829B Blank Space
+t = int(input())
+for i in range(t):
+    n = int(input())
+    space = input().split()
+    
+    max = 0
+    count = 0
+    
+    for x in space:
+        if x == "0":
+            count += 1
+            if count > max:
+                max = count
+        else:
+            count = 0
+            
+    print(max)
