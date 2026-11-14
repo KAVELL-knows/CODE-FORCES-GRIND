@@ -1,0 +1,8 @@
+#581A. Vasya the Hipster
+
+r, b = list(map(int, input().split()))
+
+pairs = min(r, b)
+left = (max(r, b) - pairs) // 2 
+
+print(pairs, left)
