@@ -1,0 +1,25 @@
+#1832B. Maximum Sum
+
+t = int(input())
+for i in range(t):
+    n, k = list(map(int, input().split()))
+    nums = list(map(int, input().split()))
+    nums.sort()
+
+    pref = [0] * (n + 1)
+    for j in range(n):
+        pref[j + 1] = pref[j] + nums[j]
+
+    total = 0
+    count = 0
+
+    while count <= k:
+        i = 2 * count
+        last = -(k - count) - 1
+
+        current = pref[n + last + 1] - pref[i]
+        if current > total:
+            total = current
+
+        count += 1
+    print(total)
