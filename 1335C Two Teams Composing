@@ -1,0 +1,16 @@
+#1335C. Two Teams Composing
+from collections import Counter
+
+t = int(input())
+
+for i in range(t):
+    n = int(input())
+    talent = input().split()
+    
+    counts = Counter(talent)
+    same = max(counts.values())
+    distinct = len(counts)
+    
+    ans = max(min(same - 1, distinct), min(same, distinct - 1))
+    print(ans)
+
