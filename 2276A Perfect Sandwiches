@@ -1,0 +1,8 @@
+#2276A. Perfect Sandwiches
+t = int(input())
+for i in range(t):
+    a, b = list(map(int, input().split()))
+    if b >= a :
+        print("-1")
+    else:
+        print(min(b, a - b))
