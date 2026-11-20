@@ -1,0 +1,12 @@
+#912A Tricky Alchemy
+
+a_yellow, b_blue = map(int, input().split())
+x, y, z = map(int, input().split())
+
+need_yellow = 2 * x + y
+need_blue = y + 3 * z
+
+add_yellow = max(0, need_yellow - a_yellow)
+add_blue = max(0, need_blue - b_blue)
+
+print(add_yellow + add_blue)
