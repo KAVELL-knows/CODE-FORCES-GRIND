@@ -650,3 +650,16 @@ elif sad > happy:
     print("sad")
 else:
     print("unsure")
+
+
+21/10/2026
+
+rev_text = text[::-1] = this reverses text
+
+pos = rev_text.find(pattern)
+Use code with caution.
+• .find() searches rev_text from left to right for the very first match of pattern.
+• It returns the 0-based index (starting count from 0) where the match begins.
+• If the word isn't found anywhere, .find() automatically returns -1.
+
+
