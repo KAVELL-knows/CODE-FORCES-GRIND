@@ -1,0 +1,35 @@
+#1899C. Yarik and Array
+t = int(input())
+for i in range(t):
+    n = int(input())
+    numbers = list(map(int, input().split()))
+    
+    possible = []
+    groups = []
+    previous = "" 
+    
+    for num in numbers:
+        if num % 2 == 0:
+            current = "even"
+        else:
+            current = "odd"
+        
+        if current != previous:
+            groups.append(num)
+        else:
+            possible.append(groups)
+            groups = [num]  
+            
+        previous = current
+
+    if groups:
+        possible.append(groups)
+
+    highest_sum = float('-inf')
+    for k in possible:
+        current_sum = 0
+        for value in k:
+            current_sum = max(value, current_sum + value)
+            highest_sum = max(highest_sum, current_sum)
+            
+    print(highest_sum)
