@@ -1,0 +1,14 @@
+#2009C. The Legend of Freya the Frog
+t = int(input())
+for i in range(t):
+    x, y, k = list(map(int, input().split()))
+    horizontal = x // k
+    if x % k > 0:
+        horizontal += 1
+    vertical = y // k
+    if y % k > 0:
+        vertical += 1
+    if horizontal > vertical:
+        print((2 * horizontal) - 1)
+    else:
+        print(2 * vertical)
